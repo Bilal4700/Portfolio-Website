@@ -49,7 +49,7 @@ export default function Home() {
 				<h1 className="text-3xl font-semibold tracking-tight">
 					Hi, I’m Muhammad Bilal
 				</h1>
-				<p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-2xl">
+				<p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl">
 					Backend-focused developer working across cloud, infra-as-code, and
 					full‑stack systems. I build reliable backends and polished UIs.
 				</p>
@@ -96,7 +96,7 @@ export default function Home() {
 			</section>
 
 			<section className="space-y-6">
-				<h2 className="text-3xl font-bold">Projects</h2>
+				<h2 className="text-4xl font-bold">Projects</h2>
 				<div className="grid gap-6 md:grid-cols-2">
 					{projects.map((p) => (
 						<a
@@ -122,10 +122,10 @@ export default function Home() {
 									/>
 								)}
 							</div>
-							<h3 className="mt-3 text-base font-semibold group-hover:underline">
+							<h3 className="mt-3 text-lg font-semibold group-hover:underline">
 								{p.title}
 							</h3>
-							<p className="text-sm text-neutral-600 dark:text-neutral-400">
+							<p className="text-base text-neutral-600 dark:text-neutral-400">
 								{p.excerpt}
 							</p>
 						</a>
