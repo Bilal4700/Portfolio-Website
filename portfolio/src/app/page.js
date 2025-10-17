@@ -96,7 +96,7 @@ export default function Home() {
 			</section>
 
 			<section className="space-y-6">
-				<h2 className="text-xl font-medium">Featured Projects</h2>
+				<h2 className="text-3xl font-bold">Projects</h2>
 				<div className="grid gap-6 md:grid-cols-2">
 					{projects.map((p) => (
 						<a
