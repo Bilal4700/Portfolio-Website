@@ -5,6 +5,12 @@
 	--foreground: #eaeaea;
 }
 
+/* Accent colors for artistic theme */
+:root {
+	--accent-1: #7c3aed; /* violet */
+	--accent-2: #06b6d4; /* teal */
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #000000;
@@ -13,13 +19,40 @@
 }
 
 body {
-	background: var(--background);
+	/* layered dark gradient with subtle vignette */
+	background: radial-gradient(
+			1200px 800px at 10% 10%,
+			rgba(124, 58, 237, 0.08),
+			transparent 15%
+		),
+		linear-gradient(180deg, #071023 0%, #02040a 100%);
 	color: var(--foreground);
 	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 header {
-	background: var(--background);
+	background: transparent;
 	color: var(--foreground);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Reusable frosted glass panel */
+.glass {
+	background: rgba(255, 255, 255, 0.02);
+	border: 1px solid rgba(255, 255, 255, 0.04);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	border-radius: 12px;
+}
+
+/* Slight accent underline used in titles */
+.accent-underline {
+	display: inline-block;
+	height: 4px;
+	background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+	width: 48px;
+	border-radius: 4px;
+	margin-top: 8px;
 }

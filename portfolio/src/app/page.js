@@ -45,19 +45,33 @@ const projects = [
 export default function Home() {
 	return (
 		<div className="space-y-10">
-			<section className="space-y-3">
-				<h1 className="text-3xl font-semibold tracking-tight">
-					Hi, I’m Muhammad Bilal
+			<section className="space-y-6">
+				<h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-violet-600 to-teal-400 bg-clip-text text-transparent">
+					Hey there! I'm Muhammad Bilal 👋
 				</h1>
-				<p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl">
-					Backend-focused developer working across cloud, infra-as-code, and
-					full‑stack systems. I build reliable backends and polished UIs.
-				</p>
-				<div className="flex gap-3 text-sm">
-					<a className="underline" href="/about">
-						About Me
+				<div className="space-y-4 text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl">
+					<p>
+						Welcome to my corner of the web, where code meets creativity! I'm a
+						Software Engineering student at the University of Calgary, turning
+						caffeine into code and ideas into innovation. 🚀
+					</p>
+					<p>
+						Passionate about crafting elegant solutions in blockchain, software
+						development, and machine learning. When I'm not coding, you'll find
+						me exploring new technologies or building the next cool thing! 💡
+					</p>
+				</div>
+				<div className="flex gap-4 text-sm">
+					<a
+						href="/about"
+						className="px-4 py-2 rounded-lg bg-gradient-to-r from-violet-600 to-teal-400 text-white font-medium hover:opacity-90 transition-opacity"
+					>
+						More About Me
 					</a>
-					<a className="underline" href="/resume">
+					<a
+						href="/resume"
+						className="px-4 py-2 rounded-lg border border-black/[.08] dark:border-white/[.145] hover:bg-black/[.03] dark:hover:bg-white/[.03] transition-colors"
+					>
 						Resume
 					</a>
 				</div>
@@ -72,12 +86,7 @@ export default function Home() {
 							period: "Jul 2025 — Present",
 							logo: "/images/enactus-logo.png",
 							description:
-								"Leading backend architecture for the Student Learning Portal (Wealth Part).",
-							bullets: [
-								"Designed REST APIs",
-								"Integrated third‑party auth",
-								"Improved CI/CD and testing",
-							],
+								"Leading development of a learning portal that provides basic financial education for high-school students and newcomers to Canada. The portal delivers concise video lessons, structured course content, and short quizzes; the initial rollout targets 150 users with measured engagement and fortnightly content updates.",
 						},
 						{
 							role: "Research Assistant - Sustainable devops",
@@ -85,11 +94,7 @@ export default function Home() {
 							period: "Sep 2025 — Present",
 							logo: "/images/research-image.png",
 							description:
-								"Researching sustainable development operations with a focus on energy-efficient cloud deployments.",
-							bullets: [
-								"Built reproducible experiments",
-								"Automated data collection pipelines",
-							],
+								"Experimenting with large language models to generate Terraform scripts and comparing them against manual baselines across GCP, AWS and Azure, with the explicit goal of making infrastructure provisioning more sustainable. I evaluate correctness and efficiency and measure carbon emissions with CodeCarbon across repeated deployments to identify lower-emission patterns.",
 						},
 					]}
 				/>

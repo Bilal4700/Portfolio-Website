@@ -4,32 +4,32 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+	variable: "--font-geist-mono",
+	subsets: ["latin"],
 });
 
 export const metadata = {
-  title: "Portfolio | Muhammad Bilal",
-  description: "Personal portfolio showcasing projects, skills, and resume.",
+	title: "Portfolio | Muhammad Bilal",
+	description: "Personal portfolio showcasing projects, skills, and resume.",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Header />
-        <main className="max-w-5xl mx-auto px-6 py-10">
-          {children}
-        </main>
-        <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+			>
+				<Header />
+				<main className="max-w-5xl mx-auto px-6 py-10 flex-grow w-full">
+					{children}
+				</main>
+				<Footer />
+			</body>
+		</html>
+	);
 }
